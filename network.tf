@@ -28,7 +28,7 @@ resource "google_compute_firewall" "allow_web" {
 
   allow {
     protocol = "tcp"
-    ports    = ["80"] # Port pour NGINX [cite: 446]
+    ports    = ["80"] 
   }
 
   source_ranges = ["0.0.0.0/0"]
